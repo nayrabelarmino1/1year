@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Year with You</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <h1>N&V</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#intro">Início</a></li>
+                    <li><a href="#timeline">Linha do Tempo</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#letters">Cartinhas</a></li>
+                    <li><a href="#final-message">Mensagem Final</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <!-- Seção de boas-vindas com frase e foto -->
+        <section id="intro" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="dedication">Para você, Vi</span>
+                <h1>Feliz 1 ano, minha alma gêmea!</h1>
+                <p>Um ano ao seu lado parece pouco diante da eternidade que eu quero viver com você. Essa é a nossa história — escrita com amor, superações e todos os momentos que nos fizeram escolher um ao outro, de novo e sempre.</p>
+                <span class="date">26.04.2025</span>
+            </div>
+        </section>
+
+        <!-- Linha do tempo -->
+        <section id="timeline" class="timeline">
+            
+            <h2 class="titulo">Nossa linha do tempo</h2>
+        
+            <div class="timeline-bar">
+              <div class="line"></div>
+              <div class="years">
+                <span data-date="2023">2023</span>
+                <span data-date="fev2024">Fev/24</span>
+                <span data-date="mar2024">Mar/24</span>
+                <span data-date="abr2024">Abr/24</span>
+                <span data-date="mai2024">Mai/24</span>
+                <span data-date="jun2024">Jun/24</span>
+                <span data-date="jul2024">Jul/24</span>
+                <span data-date="dez2024">Dez/24</span>
+                <span data-date="jan2025">Jan/25</span>
+                <span data-date="mar2025">Mar/25</span>
+                <span data-date="abr262025">26/04/25</span>
+              </div>
+            </div>
+        
+            <div class="card-container">
+              <div class="card active" data-content="2023">
+                <h3>2023 — O primeiro olhar</h3>
+                <p>Foi em 2023 que tudo começou, quando o Vi viu uma foto minha e me achou muito bonita... mas ainda não nos conhecíamos. O destino já estava fazendo seu trabalho.</p>
+              </div>
+              <div class="card" data-content="fev2024">
+                <h3>Fevereiro de 2024 — Primeiras conversas</h3>
+                <p>Começamos a conversar no Instagram e algo já parecia especial.</p>
+              </div>
+              <div class="card" data-content="mar2024">
+                <h3>Março de 2024 — Primeiro encontro</h3>
+                <p>Nos vimos pela primeira vez numa hamburgueria. Eu estava tímida, mas ele me fez rir.</p>
+              </div>
+              <div class="card" data-content="abr2024">
+                <h3>Abril de 2024 — Primeiro beijo</h3>
+                <p>No segundo encontro, rolou nosso primeiro beijo. Eu sabia que era o começo de algo grande.</p>
+              </div>
+              <div class="card" data-content="mai2024">
+                <h3>Maio de 2024 — Conhecendo a família</h3>
+                <p>Vi me convidou pra casa dele e conheci os pais dele de verdade. Assistimos Noiva Cadáver.</p>
+              </div>
+              <div class="card" data-content="jun2024">
+                <h3>Junho de 2024 — Primeiros desafios</h3>
+                <p>Ele começou o campo básico. Eu fiquei preocupada e chorei muito na primeira noite. Estava torcendo por ele o tempo todo.</p>
+              </div>
+              <div class="card" data-content="jul2024">
+                <h3>Julho de 2024 — Mais um campo</h3>
+                <p>Foi a vez do campo fit. Eu estive lá novamente, do lado dele, mesmo com o medo dele. E ele venceu mais uma vez!</p>
+              </div>
+              <div class="card" data-content="dez2024">
+                <h3>Dezembro de 2024 — Fim de ciclo</h3>
+                <p>Decidimos nos afastar por um tempo. Eu fui pra Paraty sozinha, refletir sobre mim, sobre nós. Ele sempre esteve no meu coração.</p>
+              </div>
+              <div class="card" data-content="jan2025">
+                <h3>Janeiro de 2025 — Recomeço</h3>
+                <p>Voltamos a nos falar. E tudo dentro de mim disse: vai, é ele.</p>
+              </div>
+              <div class="card" data-content="mar2025">
+                <h3>Março de 2025 — O recomeço oficial</h3>
+                <p>Voltamos a namorar, mais maduros, mais certos. E mais apaixonados do que nunca.</p>
+              </div>
+              <div class="card" data-content="abr262025">
+                <h3>26 de Abril de 2025 — 1 ano de nós</h3>
+                <p>Um ano dessa história linda. E eu faria tudo de novo. Porque te amo, Vi.</p>
+              </div>
+            </div>
+          </section>        
+
+          <section class="gallery-section">
+            <h2 class="titulo2">Algumas das nossas memórias</h2>
+          
+            <div id="gallery" class="gallery-carousel">
+              <!-- Carrossel 1 -->
+              <div class="carousel-wrapper">
+                <button class="carousel-btn prev"  onclick="scrollCarousel('prev', 0)">❮</button>
+                <div class="carousel-row">
+                  <div class="media-card" onclick="openModal('Nosso primeiro registro juntos', 'Nosso segundo encontro, a noite em que você disse que me amava pela primeira vez.', 'videos/segundo-encontro.mp4', true, 'vertical-video')">
+                    <img src="images/primeiro-encontro.jpg" alt="vertical video" />
+                  </div>
+                  <div class="media-card" onclick="openModal('Sua formatura', 'Momento lindo onde te vi realizado!', 'videos/formatura-vi.mp4', true, 'horizontal-video')">
+                    <img src="images/formatura-vi.jpg" alt="horizontal video" />
+                  </div>
+                  <div class="media-card" onclick="openModal('Minha formatura', 'Aquele dia especial em que conquistei meu diploma ao lado do meu amor 💖', 'videos/formatura-nay.mp4', true, 'vertical-video')">
+                    <img src="images/formatura-nay.jpg" alt="Formatura Nay" />
+                  </div>
+                  <div class="media-card" onclick="openModal('Casamento', 'A gente todo elegante num casamento 💒', 'images/afoto.jpg', false, 'horizontal-img')">
+                    <img src="images/casamento.jpg" />
+                  </div>
+                  <div class="media-card" onclick="openModal('PEDRA E AÇO', 'Fomos assistir mine e nos divertimos muito com o filme 💖', 'videos/mine-filme.mp4',  true, 'vertical-video')">
+                    <img src="images/mine.jpg" alt="Indo assistir mine" />
+                  </div>
+                  <div class="media-card" onclick="openModal('A volta do campo básico', '26 de maio — o dia em que meu coração voltou pra casa. Depois de tanta preocupação, te ver bem foi o maior alívio do mundo. Meu guerreiro voltou, e com ele, voltou também a paz que só existe quando você tá perto 💛', 'videos/campo.mp4', true, 'vertical-video')">
+                    <img src="images/camporeencontro.jpg" alt="Volta do campo" />
+                  </div>
+                  <div class="media-card" onclick="openModal('Primeira vez em casa', 'A primeira vez que você dormiu aqui... lembro da gente rindo enquanto fazia skin care, como se o mundo lá fora nem existisse. Foi leve, divertido, e meu coração estava tão feliz com você ali, pertinho de mim ✨💖. Foto de outra das nossas festas do pijama.', 'images/pijama.jpg', false, 'vertical-img')">
+                    <img src="images/foto1casa.jpg" alt="Casa" />
+                  </div>
+                </div>
+                <button class="carousel-btn next" onclick="scrollCarousel('next', 0)">❯</button>
+              </div>
+          
+              <!-- Carrossel 2 -->
+              <div class="carousel-wrapper">
+                <button class="carousel-btn prev"  onclick="scrollCarousel('prev', 1)">❮</button>
+                <div class="carousel-row">
+                    <div class="media-card" onclick="openModal('Seu aspirantado', 'Que dia lindo… Ver você com a roupa de aspirante, segurando sua espada com aquele brilho no olhar, foi indescritível. Eu sabia o quanto você sonhou com isso — e estar ao seu lado pra ver esse sonho virar realidade foi a coisa mais linda do mundo. Meu orgulho, meu amor, meu aspirante. ', 'videos/aspirante.mp4', true, 'vertical-video')">
+                        <img src="images/nosso-amor.jpg" alt="Aspirantado Vi" />
+                      </div>
+                  <div class="media-card" onclick="openModal('Casamento', 'O dia em que fomos no casamento do Paulo e Elisabeth, que lugar incrível! Lembro de perceber nesse dia o quanto eu sou teimosa as vezes kkkkkkkkkkk', 'images/paisagem-casamento.jpg', false, 'vertical-img')">
+                    <img src="images/casamento-selfie.jpg" alt="casamento" />
+                  </div>
+                  <div class="media-card" onclick="openModal('Na academia', 'Juntos no treino de morceguinhos, óbviamente. 💪', 'images/acad.jpg', false, 'vertical-img')">
+                    <img src="images/acad.jpg" alt="Academia" />
+                  </div>
+                  <div class="media-card" onclick="openModal('Simplesmente A FOTO', 'Eu amo essa foto com todas as minhas forças <3', 'images/casamento-pose.jpg', false, 'vertical-img')">
+                    <img src="images/afoto.jpg" alt="Dormindo" />
+                  </div>
+                  <div class="media-card" onclick="openModal('A mimir', 'O dia estava friozinho, merecemos um descansinho kkkkkkkkkkk', 'images/amimir.jpg', false, 'vertical-img')">
+                    <img src="images/amimir.jpg" alt="Dormindo" />
+                  </div>
+                  <div class="media-card" onclick="openModal('Divertidamente', 'A gente depois de ver Divertidamente, um filme feito para crianças e que quase choramos KKKKKK.', 'videos/divertidamentevideo.mp4', true, 'vertical-video')">
+                    <img src="images/divertidamente.jpg" alt="Divertidamente" />
+                  </div>
+                  <div class="media-card" onclick="openModal('Indo votar', 'Ano passado até na urna a gente foi de casal KKKKKK até o TSE shipou a gente 😎🗳️❤️', 'images/nos.jpg', false, 'vertical-img')">
+                    <img src="images/votacao.jpg" alt="Eleição" />
+                  </div>
+                  
+                  <div class="media-card" onclick="openModal('Festa Junina', 'O dia em que percebi que eu namorava o popular da escola KKKKKKKKKKK', 'videos/junina.mp4', true, 'vertical-video')">
+                    <img src="images/juninafoto.jpg" alt="Junina" />
+                  </div>
+                 
+                </div>
+                <button class="carousel-btn next" onclick="scrollCarousel('next', 1)">❯</button>
+              </div>
+            </div>
+          </section>
+          
+          <!-- Modal para descrição -->
+          <div id="mediaModal" class="modal">
+            <div class="modal-overlay" onclick="closeModal()"></div>
+            <div class="modal-container">
+              <span class="close-btn" onclick="closeModal()">&times;</span>
+              <img id="modalImage" src="" alt="Imagem em destaque"/>
+              <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+              </div>
+            </div>
+          </div>
+          
+
+        <!-- Cartinha -->
+        <section id="letters" class="letters-section">
+            <h2>Poemas para você, meu Vi</h2>
+            <p>Algumas das poeminhas que escrevi para você:</p>
+          
+            <div class="letters-container">
+              <div class="letter-card">
+                <div class="card-front">
+                  <h3>Um dia comum, mas com você</h3>
+                </div>
+                <div class="card-back">
+                  <p>Meu bem,<br>
+                    Eu olho pra gente e vejo algo que não precisa de glitter pra brilhar. É teu jeito de me fazer rir quando tudo parece cinza, de segurar minha mão sem prometer nada, mas fazendo eu sentir tudo.
+                    Você é meu amor comum de um jeito extraordinário. Aquele tipo de amor que não grita, mas que transforma tudo.
+                    Com você, a vida é feita de domingos preguiçosos, sorrisos bestas, e aquele tipo de carinho que fica até quando o toque vai embora.
+                    Você é a música boa no fundo do meu caos.</p>
+                </div>
+              </div>
+          
+              <div class="letter-card">
+                <div class="card-front">
+                  <h3>Conforto</h3>
+                </div>
+                <div class="card-back">
+                  <p>Com você, até as situações mais constrangedoras ficam leves. Fico tranquila até nas coisas mais bobas, como sôtar sem nem pensar duas vezes. Você me faz sentir segura, onde a vergonha dá lugar ao riso. Eu sou eu mesma, sem máscaras, e não tem nada mais reconfortante que isso. Só você me faz ter essa paz, mesmo nas situações mais inesperadas.</p>
+                </div>
+              </div>
+          
+              <div class="letter-card">
+                <div class="card-front">
+                  <h3>Com você, eu vou</h3>
+                </div>
+                <div class="card-back">
+                  <p>Se for com você, eu não tenho medo. Você é meu lar, meu melhor acaso. Te amo no silêncio, no riso e em tudo que ainda vem.</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="post-it-notes">
+              <div class="post-it">Pois tudo que é amor parece com você.</div>
+              <div class="post-it">Com você, tudo é mais fácil. <br>Te amito!</div>
+              <div class="post-it">Você sempre será minha memória favorita.</div>
+            </div>
+          </section>
+          
+
+        <!-- Vídeo ou mensagem final -->
+        <section id="final-message" class="final-message">
+            <h2>Uma última coisinha…</h2>
+            <p>Antes de você sair daqui, queria te deixar com uma mensagem especial. Clica aí embaixo e vê com o coração. 💖</p>
+            
+            <div class="video-placeholder">
+              <!-- Aqui você pode colocar seu vídeo mais tarde -->
+              <!-- Exemplo: <iframe src="link-do-seu-video" ...></iframe> -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Coração no footer -->
+    <footer>
+        <p>Com todo amor do mundo, Nay ❤️<i class="fas fa-heart"></i></p>
+    </footer>
+
+    <!-- Adicionando Font Awesome para o coração -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
